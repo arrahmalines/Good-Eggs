@@ -1,0 +1,302 @@
+@keyframes swing{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(20deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.main-backdrop-2{
+	height: 30rem;
+	padding: 1rem;
+}
+
+.slider-wrapper{
+	display: flex;
+	background: black;
+	height: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+.slider-wrapper::-webkit-scrollbar{
+	display: none;
+}
+
+.slider-content-info{
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 30%;
+	gap: 10px;
+}
+
+.footer{
+	background: black;
+	color: white;
+	height: 25rem;
+}
+
+.footer-upper{
+	display: flex;
+	height: 81%;
+	border-bottom: 1px white solid;
+	gap: 50px;
+	padding-left: 150px;
+}
+
+.footer-links{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.footer-links a{
+	font-size: 14px;
+	color: white;
+}
+
+.footer-link-container{
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.footer-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-lower{
+	display: flex;
+	padding-top: 20px;
+	padding-left: 150px;
+	font-size: 13px;
+	gap: 50px;
+}
+
+.footer-lower a{
+	color: white;
+	text-decoration: none;
+}
+
+.footer .footer-upper p{
+	font-size: 25px;
+	font-family: serif;
+	font-style: italic;
+}
+
+.slider-content-info h2, .slider-content-info p{
+	text-align: center;
+}
+
+.slider-content-info a{
+	font-size: 10px;
+	font-weight: 900;
+	color: #01B5C1;
+	text-decoration: none;
+	border: 2px #01B5C1 solid;
+	border-radius: 10px;
+	padding: 3px;
+
+	transition: background .3s;
+}
+
+.slider-content-info a:hover{
+	text-decoration: none;
+	background: #01B5C1;
+	color: white;
+}
+
+.main-backdrop{
+	height: 100vh;
+	padding-left: 13vh;
+	padding-right: 13vh;
+}
+
+.slider-content{
+	display: flex;
+	flex: 1 0 100%;
+	height: 35rem;
+}
+
+.slider-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 2px;
+}
+
+.slider-nav a:hover{
+	background: rgb(0, 0, 0, .7);
+}
+
+.slider-nav a{
+	background: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	z-index: 100;
+
+	transition: background .5s;
+}
+
+.slider-content-info{
+	background: white;
+}
+
+.slider-content-img{
+	overflow: hidden;
+	scroll-snap-align: start;
+	height: 100%;
+	width: 70%;
+}
+
+.slider-content-img img{
+	height: 100%;
+	width: 100%;
+}
+
+.main-backdrop-1{
+	margin-bottom: 3rem;
+}
+
+.membership-card{
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	background: black;
+	height: 50px;
+	padding: 10px 20px 10px 20px;
+}
+.membership-card-text{
+	font-size: 14px;
+	margin-left: 20px;
+	color: white;
+	font-family: serif;
+}
+
+.membership-card-text-a{
+	color: white;
+	font-family: serif;
+	text-decoration: underline;
+}
+
+.info-icon{
+	font-size: 11px;
+	color: black;
+}
+
+.info-icon-background{
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	background: white;
+	border-radius: 50%;
+}
+
+*{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: none;
+	margin: none;
+}
+
+.basket-icon{
+	color: white;
+	font-size: 20px;
+	background: #025A60;
+	border-radius: 50px;
+	display: flex;
+	justify-items: center;
+	align-content: center;
+	padding: 8px;
+
+	transition: background 0s;
+}
+
+.logo{
+	animation: swing 2s ease-in-out 1;
+}
+
+.logo:hover{
+	animation: swing 2s ease-in-out infinite;
+}
+
+.basket-icon:hover{
+	background: #01B5C1;
+}
+
+.nav-bar{
+	padding: none;
+	margin: none;
+}
+
+.nav-bar-1{
+	border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+
+.nav-bar-1-btn {
+	font-size: 13px;
+	font-weight: bolder;
+	color: black;
+}
+
+.search-icon{
+	font-size: 20px;
+	color: black;
+}
+
+.search-icon:hover{
+	color: #018A94;
+}
+
+.nav-bar-1-btn-1{
+	font-size: 13px;
+	font-weight: bolder;
+	color: black;
+}
+
+.nav-bar-1-btn:hover{
+	color: #018A94;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+.nav-bar-1-1{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.nav-bar-1-2{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
